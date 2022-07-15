@@ -1,0 +1,3 @@
+language = "nodejs"
+entrypoint = "index.html"
+run = "open index.html"
