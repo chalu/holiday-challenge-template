@@ -1,0 +1,9 @@
+{
+  "name": "holiday-challenge-template",
+  "version": "1.0.0",
+  "description": "build something cool",
+  "main": "src/index.html",
+  "repository": "https://github.com/chalu/holiday-challenge-template",
+  "author": "Charles Opute Odili <chaluwa@gmail.com>",
+  "license": "MIT"
+}

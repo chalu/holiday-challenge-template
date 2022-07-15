@@ -1,0 +1,3 @@
+language = "nodejs"
+run = "index.html"
+entrypoint = "src/app.mjs"
