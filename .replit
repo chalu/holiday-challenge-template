@@ -1,2 +1,1 @@
-language = "nodejs"
 entrypoint = "src/js/app.mjs"
