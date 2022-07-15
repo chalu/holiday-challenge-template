@@ -1,1 +1,3 @@
-entrypoint = "src/js/app.mjs"
+language = "html"
+run = ""
+entrypoint = "index.html"
