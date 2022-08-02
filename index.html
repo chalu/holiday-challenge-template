@@ -1,19 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StatSchool</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <h2>make some magic here!!</h2>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2 id="school-name">Statschool</h2>
+      <img id="avatar" src="./images/adult-women.png" alt="Avatar" />
+    </header>
+    <main>
+      <section id="hero-sec">
+        <div class="hero-message">
+          <h1>Welcome, <span>Tolulope</span></h1>
+          <p>
+            Check out the statistics of students and instructors in our school
+            of engineering
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="./images/hero-girl.svg" alt="girl on system" />
+        </div>
+      </section>
+
+      <!-- summary of students -->
+      <!-- <h2>Students</h2> -->
+      <section class="summary-table table-sections">
+        <div class="div-table summary">
+          <h3>Gender Summary</h3>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Track</th>
+                  <th>Male</th>
+                  <th>Female</th>
+                  <th>Queer</th>
+                  <th>AGender</th>
+                  <th>PolyGender</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody class="gender-row">
+                <tr>
+                  <td><i>Loading...</i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="summary-text">
+          <h3>
+            The summary table shows that the females have the highest population
+            of <span>193</span> students out of <span>400</span> students. This
+            shows diversity.
+          </h3>
+        </div>
+      </section>
+      <section class="summary-table table-sections column">
+        <div class="summary summary-text">
+          <h3>Our school accepts students from ages of <span>20-40</span>.</h3>
+        </div>
+        <div class="div-table">
+          <h3>Age Summary</h3>
+          <div>
+            <table class="">
+              <thead>
+                <tr>
+                  <th>Min Age</th>
+                  <th>Max Age</th>
+                  <th>Ave Age</th>
+                </tr>
+              </thead>
+              <tbody class="age-row">
+                <tr>
+                  <td><i>Loading...</i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- full statistics of students -->
+      <section class="statistics-section table-sections"></section>
+    </main>
 
     <!-- // ============= EEND DO NOT EDIT ============== // -->
     <script src="index.mjs" type="module"></script>
     <!-- // ============= EEND DO NOT EDIT ============== // -->
-</body>
+  </body>
 </html>

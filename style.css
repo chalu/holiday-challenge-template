@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #efedfd;
+}
+
+header {
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.875);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.24);
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#school-name {
+  color: #4c1d95;
+  font-size: 1.3rem;
+  text-shadow: 1px 3px 5px rgba(77, 29, 149, 0.206);
+}
+
+#avatar {
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: 1s;
+}
+
+#avatar:hover {
+  border-color: #4c1d95;
+}
+main {
+  /* width: 100%; */
+}
+#hero-sec {
+  /* background: linear-gradient(
+      rgba(77, 29, 149, 0.669),
+      rgba(77, 29, 149, 0.594)
+    ),
+    url("./images/blue-background-4863452_1280.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background: #fff;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.24);
+  width: 85%;
+  margin: 5rem auto;
+  border-radius: 1rem;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .hero-image,
+.hero-message {
+  flex: 1;
+} */
+
+.hero-message h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-message p {
+  width: 80%;
+}
+
+.hero-image img {
+  width: 15rem;
+  margin-left: auto;
+  display: block;
+}
+
+h1 span {
+  color: #4c1d95;
+}
+
+/*****FULL STATISTICS******/
+.table-sections {
+  /* flex flex-wrap gap-8 justify-center align-center main-div" */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 2rem auto;
+  padding-bottom: 2rem;
+}
+
+.div-table {
+  color: #333;
+  border-radius: 0.7rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.24);
+  background-color: #fff;
+  padding: 1rem;
+  flex: 1;
+}
+
+.summary {
+  /* flex: 1.5; */
+}
+
+.summary-text {
+  flex: 1;
+}
+
+.summary-text h3 {
+  font-weight: 500;
+}
+.summary-text span {
+  color: #4c1d95;
+  font-weight: 600;
+}
+
+.div-table h3 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.table-box {
+  height: 20rem;
+  overflow-y: scroll;
+  width: 100%;
+  border: 1px solid #777;
+}
+
+.div-table tr {
+  border: none;
+}
+
+.div-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.div-table thead {
+  cursor: pointer;
+}
+
+.div-table tbody td,
+.div-table thead th {
+  margin-top: 1rem;
+}
+
+.div-table thead th {
+  font-weight: 600;
+  background-color: #4c1d95;
+  color: #fff;
+  font-size: 0.8rem;
+  transition: 0.3s ease-in;
+}
+
+.div-table thead th:hover {
+  background-color: #4d1d95f5;
+  box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.div-table tbody td {
+  font-size: 0.8rem;
+}
+
+.div-table table tbody tr:nth-child(odd) {
+  background-color: rgba(51, 51, 51, 0.077);
+}
+
+.div-table table tbody tr:nth-child(even),
+.div-table table tbody tr:nth-child(odd) {
+  transition: 0.3s ease-in-out;
+}
+
+.div-table table tbody tr:nth-child(odd):hover {
+  background-color: #4d1d953a;
+}
+.div-table table tbody tr:nth-child(even):hover {
+  background-color: #4d1d953a;
+}
+
+@media screen and (max-width: 968px) {
+  #hero-sec,
+  .table-sections {
+    width: 95%;
+  }
+
+  .hero-message h1 {
+    font-size: 2rem;
+  }
+
+  .hero-image img {
+    width: 10rem;
+  }
+  .summary-table {
+    flex-direction: column;
+  }
+  .column {
+    flex-direction: column-reverse;
+  }
+  .div-table,
+  .summary-text {
+    width: 70%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-message h1 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  .hero-message p {
+    font-size: 0.8rem;
+  }
+
+  .hero-image img {
+    width: 6rem;
+  }
+
+  .div-table thead th,
+  .div-table tbody td {
+    font-size: 0.7rem;
+  }
+
+  .div-table {
+    width: 100%;
+  }
+
+  .div-table tbody td,
+  .div-table thead th {
+    padding: 0.3rem;
+  }
+}
